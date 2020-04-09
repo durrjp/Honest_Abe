@@ -1,7 +1,7 @@
-import { useCorps } from "./corpsProvider"
-import { Corp } from "./Corps"
+import { useCorps } from "./corpsProvider.js"
+import { Corp } from "./Corps.js"
 
-const contentTarget = document
+const contentTarget = document.querySelector(".corpsContainer")
 
 export const CorpsList = () => {
     const render = () => {
@@ -9,7 +9,7 @@ export const CorpsList = () => {
         const corpsHTML = corps.map(corp => {
             return Corp(corp)
         })
-
+        contentTarget.innerHTML = corpsHTML
     }
     render()
 }
