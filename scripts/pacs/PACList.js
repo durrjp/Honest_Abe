@@ -3,7 +3,7 @@ import { useCorpDonations } from "../corps/corpDonationProvider.js"
 import { useCorps } from "../corps/corpsProvider.js"
 import { PAC } from "./PACs.js"
 
-const contentTarget = document.querySelector(".pacsContainer")
+const contentTarget = document.querySelector(".pacsList")
 
 export const PACList = () => {
     const pacs = usePACs()
