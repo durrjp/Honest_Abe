@@ -1,7 +1,6 @@
 .politiciansContainer {
-    width: 710px;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
 }
 
 .politiciansList {
@@ -9,11 +8,22 @@
     flex-flow: row wrap;
 }
 
+.politician__name {
+    margin: auto;
+}
+
 .politician {
-    background-color: rgb(187, 240, 187);
     padding: .5em;
     margin: .5em;
     border-radius: 1em;
     width: 320px;
     height: 500px
+}
+
+.red {
+    background-color: rgb(245, 188, 188);
+}
+
+.blue {
+    background-color: #add8e6;
 }

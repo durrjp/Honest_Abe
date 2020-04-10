@@ -11,4 +11,11 @@
     font-size: 2em;
     color:darkblue;
     text-align: center;
+    font-weight: bold;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.hidden {
+    display: none;
 }

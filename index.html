@@ -9,15 +9,25 @@
 <body>
 <div class ="main">
     <article class="politiciansContainer">
-        <header class="header">Politicians</header>
+        <header class="header">
+            <div>Politicians</div>
+            <button id="seeCorporations">&#8594; Corporations</button>
+        </header>
         <section class="politiciansList"></section>
     </article>
-    <article class="corpsContainer">
-        <header class="header">Corporations</header>
+    <article class="corpsContainer hidden">
+        <header class="header">
+            <button id="seePoliticians">&#8592; Politicians</button>
+            <div>Corporations</div>
+            <button id="seePACs">&#8594; PAC's</button>
+        </header>
         <section class="corpsList"></section>
     </article>
-    <article class="pacsContainer">
-        <header class="header">PAC's</header>
+    <article class="pacsContainer hidden">
+        <header class="header">
+            <button id="seeCorporations">&#8592; Corporations</button>
+            <div>PAC's</div>
+        </header>
         <section class="pacsList"></section>
     </article>
 </div>
