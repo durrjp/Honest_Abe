@@ -8,8 +8,8 @@ export const CorpsList = () => {
         const corps = useCorps()
         const corpsHTML = corps.map(corp => {
             return Corp(corp)
-        })
-        contentTarget.innerHTML = corpsHTML
+        }).join("")
+        contentTarget.innerHTML += corpsHTML
     }
     render()
 }

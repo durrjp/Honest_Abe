@@ -1,19 +1,25 @@
-export const PAC = (pac) => {
+export const PAC = (pac, corpDonationMatches, matchingCorps) => {
     return `
     <section class="pac">
         <header class="pac__name">
-            <h1>QUOTEZART</h1>
+            <h1>${pac.registeredName}</h1>
         </header>
         <div class="pac__info">
-            <div>222 Ash Street, Faxon, Maine, 7441</div>
+            <div>${pac.address}</div>
         </div>
         <div class="pac__donors">
-            <h2>Donors</h2>
+            <h4>Donors</h4>
             <ul>
-                <li>XLEEN ($2,103)</li>
-                <li>TALAE ($50,192)</li>
+            ${
+                corpDonationMatches.map(corpDono => {
+                    const singleCorp = matchingCorps.find(matchingCorp => matchingCorp.id === corpDono.corporationId)
+                    return `
+                    <li>${singleCorp.company} ($${corpDono.amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")})</li>
+                    `
+                }).join("")
+            }
             </ul>
         </div>
-    </section>                
+    </section>
     `
 }

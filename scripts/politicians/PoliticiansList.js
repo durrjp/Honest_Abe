@@ -10,7 +10,7 @@ export const PoliticiansList = () => {
             return Politician(politician)
         }).join("")
         
-        contentTarget.innerHTML = politicianHTML
+        contentTarget.innerHTML += politicianHTML
     }
     render()
 }

@@ -1,0 +1,14 @@
+@import "./corps.css";
+@import "./pacs.css";
+@import "./politicians.css";
+
+.main {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.header {
+    font-size: 2em;
+    color:darkblue;
+    text-align: center;
+}
