@@ -37,7 +37,7 @@ export const PoliticiansList = () => {
             })
 
             let filteredCorps = []
-            const matchingCorpInterests = matchingInterests.map(matchingInt => {
+            matchingInterests.map(matchingInt => {
                 const filteredCorpInterests = corpInterests.filter(corpInterest => matchingInt.id === corpInterest.interestId)
                 filteredCorps = filteredCorpInterests.map(fCI => {
                     return corps.find(corp => corp.id === fCI.corporationId)
