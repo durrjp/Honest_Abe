@@ -16,7 +16,6 @@ export const PACList = () => {
             const matchingCorps = corpDonationMatches.map(corpDonation => {
                 return corps.find(corp => corp.id === corpDonation.corporationId)
             })
-            debugger
             return PAC(pac, corpDonationMatches, matchingCorps)
         }).join("")
         contentTarget.innerHTML += pacsHTML
