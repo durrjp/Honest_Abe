@@ -1,7 +1,7 @@
 export const PAC = (pac, corpDonationMatches, matchingCorps) => {
     return `
-    <section class="pac">
-        <header class="pac__name">
+    <section class="pac card">
+        <header class="pac__name cardHeader">
             <h1>${pac.registeredName}</h1>
         </header>
         <div class="pac__info">

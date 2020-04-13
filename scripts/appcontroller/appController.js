@@ -25,7 +25,14 @@ const hideAllComponents = () => {
         '.pacsContainer'
     ]
 
+    const buttonArray = [
+        '#seePoliticians',
+        '#seeCorporations',
+        '#seePACs'
+    ]
+
     componentArray.forEach(component => document.querySelector(component).classList.add("hidden"))
+    buttonArray.forEach(component => document.querySelector(component).classList.remove("constantWiggle"))
 }
 
 export const pageStateChanged = () => {
@@ -34,9 +41,12 @@ export const pageStateChanged = () => {
 
     if (pageState === "politicians") {
         document.querySelector(".politiciansContainer").classList.remove("hidden")
+        document.querySelector("#seePoliticians").classList.add("constantWiggle")
     } else if (pageState === "corps") {
         document.querySelector(".corpsContainer").classList.remove("hidden")
+        document.querySelector("#seeCorporations").classList.add("constantWiggle")
     } else if (pageState === "pacs") {
         document.querySelector(".pacsContainer").classList.remove("hidden")
+        document.querySelector("#seePACs").classList.add("constantWiggle")
     }
 }

@@ -1,5 +1,17 @@
+.pacsContainer { 
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.pacsList {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: center;
+}
+
 .pac {
-    background-color: rgb(255, 217, 147);
+    background-color: rgb(224, 218, 218);
     padding: .5em;
     margin: .5em;
     border-radius: 1em

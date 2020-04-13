@@ -3,8 +3,8 @@ export const Politician = (politician, matchingPACdonos, matchingPACs, matchingB
     return `
     <section class="politician ${
         politician.party === "republican"? "red" : "blue"
-    }">
-        <header class="politician__name">
+    } card">
+        <header class="politician__name cardHeader">
             <h2>${politician.name.first} ${politician.name.last}</h2>
         </header>
         <div class="politician__info">
