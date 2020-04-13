@@ -10,6 +10,8 @@ import { getBills } from "./bills/billsProvider.js";
 import { getCorpInterests } from "./corps/corpInterestsProvider.js";
 import { getPoliticianBills } from "./politicians/politicianBillProvider.js";
 import { getInterests } from "./interests/interestsProvider.js";
+import "./appcontroller/appController.js"
+import "./buttons/buttonevents.js"
 
 const promise = Promise.all([
     getPoliticians(),

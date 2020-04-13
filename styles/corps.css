@@ -2,5 +2,20 @@
     background-color: rgb(187, 235, 187);
     padding: .5em;
     margin: .5em;
-    border-radius: 1em
+    border-radius: 1em;
+    width: 400px
+}
+
+.corpsContainer { 
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%
+}
+
+.corpsList {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    justify-content: center;
+    
 }
